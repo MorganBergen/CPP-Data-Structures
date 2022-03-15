@@ -1,0 +1,23 @@
+commands for lldb debugger
+
+	(gdb) ./exec						(lldb) ./exec
+	(gdb) break:fileName:lineNumer		(lldb) b fileName.cpp:lineNumber
+	(gdb) print variable name			(lldb) print variableName
+	(gdb) step							(lldb) step
+	(gdb) step							(lldb) step
+	(gdb) print *ptr@sizeOfArray		(lldb) parray sizeNumberOfArray ptr
+	(gdb) info locals					(lldb) frame variable
+	(gdb) next							(lldb) tread step-over
+	(gdb) next							(lldb) next
+	(gdb) disable 						(lldb) breakpoint disable 1
+	(gdb) continue						(lldb) run
+	(gdb) quit							(lldb) quit
+	(gdb) info break					(lldb) breakpoint list
+	(gdb) shell clear					(lldb) clear
+	(gdb) start
+										(lldb) frame variable *list->headptr
+										(lldb) frame variable *list->headptr->next_node
+										(lldb) frame variable *list->headptr->next_node->next_node
+	
+	LinkedList<std::string>* list;
+	list = new LinkedList<std::string>();
