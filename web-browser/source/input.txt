@@ -1,0 +1,21 @@
+NAVIGATE http://google.com
+NAVIGATE http://reddit.com
+NAVIGATE http://facebook.com
+NAVIGATE http://myspace.com
+HISTORY
+BACK
+BACK
+HISTORY
+FORWARD
+FORWARD
+FORWARD
+FORWARD
+HISTORY
+BACK
+BACK
+BACK
+NAVIGATE http://ku.edu
+FORWARD
+HISTORY
+BACK
+HISTORY
