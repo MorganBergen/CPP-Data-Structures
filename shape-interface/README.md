@@ -13,9 +13,10 @@ Overview of Concepts:
 - classes to produce abstract data types
 - exception-handling basis std::runtime_error
 - inheritance
-- late binding
+- late binding:  
+  - Late binding essentially means that the appropriate version of a method should be decided at execution time and not during runtime.
+  - Late binding happens to be one specific aspect of polymorphism which is a way to communicate to the compiler that the code to execute should not be        determined until the program is running, this is used with tool such as pointer variables and virtual methods.
 - overriding pure virtual functions
-
 
 Overview of Assignment Instructions:
 
