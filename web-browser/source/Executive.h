@@ -6,11 +6,12 @@
 #include "ListInterface.h"
 #include "Browser.h"
 
-class Executive {
+class Executive
+{
 private:
 	Browser history;
 	std::string m_file;
-	
+
 public:
 	void main();
 	Executive();
@@ -18,7 +19,6 @@ public:
 	void run();
 	void fileIO(std::string p_file);
 	void modulo(int x, int mod);
-	
 };
 
 #endif

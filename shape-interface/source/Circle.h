@@ -11,13 +11,13 @@
 #include <stdio.h>
 #include "Shape.h"
 
-class Circle : public Shape {
-    
+class Circle : public Shape
+{
+
 private:
     double m_radius;
-    
+
 public:
-    
     /**
      * @pre     must have an object be declared from the stack to call this default constructor
      * @post    will only construct the object
@@ -26,7 +26,7 @@ public:
      * @returnsnone
      */
     Circle();
-    
+
     /**
      * @pre     must have an object be declared from the heap to call this constructor
      * @post    will initialize m_radius to be of the same value to that of radius
@@ -35,7 +35,7 @@ public:
      * @returnsnone
      */
     Circle(double radius);
-    
+
     /**
      * @pre     object must have been previously declared and constructed
      * @post    will initialize m_radius to be of the same value to that of radius
@@ -44,7 +44,7 @@ public:
      * @returnsnone
      */
     void setRadius(double radius);
-    
+
     /**
      * @pre     object must have been previously declared and constructed and have values of radius initialized
      * @post    none
@@ -53,7 +53,7 @@ public:
      * @returnsarea of the circle, based on the size of m_radius
      */
     virtual double area() const;
-    
+
     /**
      * @pre     object must have been previously declared and constructed and have values of radius initialized
      * @post    none
@@ -62,7 +62,7 @@ public:
      * @returnsname of the circle, which in this case is always "Circle"
      */
     virtual std::string shapeName() const;
-    
+
     /**
      * @pre     Circle must no longer be needed by the program
      * @post    will be the destructor of the circle class object, inherited by the Shape Interface
@@ -71,7 +71,6 @@ public:
      * @returnsnone
      */
     virtual ~Circle();
-    
 };
 
 #endif /* Circle_h */

@@ -5,15 +5,19 @@
 #include <iostream>
 #include <stdexcept>
 
-int main() {
-	
+int main()
+{
+
 	Executive object;
-	
-	try {
+
+	try
+	{
 		object.fileIO("input.txt");
-	} catch (std::runtime_error& e) {
+	}
+	catch (std::runtime_error &e)
+	{
 		std::cerr << e.what() << std::endl;
 	}
-	
+
 	return (0);
 }

@@ -9,27 +9,32 @@
 #include <iostream>
 #include <string>
 
-Rectangle::Rectangle(){}
+Rectangle::Rectangle() {}
 
-Rectangle::Rectangle(double width, double length){
+Rectangle::Rectangle(double width, double length)
+{
     m_width = width;
     m_length = length;
 }
 
-void Rectangle::setWidth(double width){
+void Rectangle::setWidth(double width)
+{
     m_width = width;
 }
 
-void Rectangle::setlength(double length){
+void Rectangle::setlength(double length)
+{
     m_length = length;
 }
 
-double Rectangle::area() const {
-    return(m_width*m_length);
+double Rectangle::area() const
+{
+    return (m_width * m_length);
 }
 
-std::string Rectangle::shapeName() const {
+std::string Rectangle::shapeName() const
+{
     return ("Rectangle");
 }
 
-Rectangle::~Rectangle(){}
+Rectangle::~Rectangle() {}

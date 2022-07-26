@@ -5,11 +5,13 @@
 #include <stdio.h>
 #include "ListInterface.h"
 
-class Browser {
+class Browser
+{
 private:
-	ListInterface<std::string>* history_list;
+	ListInterface<std::string> *history_list;
 	int current;
-	
+	std::string m_file;
+
 public:
 	Browser();
 	~Browser();
@@ -17,8 +19,6 @@ public:
 	void print();
 	void back();
 	void forward();
-	
-	
 };
 
 #endif
@@ -34,9 +34,3 @@ public:
  ===========
  newest
  */
-
-
-
-
-
-

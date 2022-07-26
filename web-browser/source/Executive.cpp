@@ -7,14 +7,16 @@
 #include <fstream>
 #include <cstdlib>
 
-Executive::Executive() {
+Executive::Executive()
+{
 	Browser history;
 }
 
 Executive::~Executive() {}
 
-void Executive::run() {
-	
+void Executive::run()
+{
+
 	history.navigateTo("http://google.com");
 	history.navigateTo("http://reddit.com");
 	history.navigateTo("http://facebook.com");
@@ -38,51 +40,48 @@ void Executive::run() {
 	history.print();
 }
 
-//must be used with try catch block
-void Executive::fileIO(std::string p_file) {
-	
+// must be used with try catch block
+void Executive::fileIO(std::string p_file)
+{
+
 	std::string commands;
-	
+
 	std::ifstream inStream;
-	
+
 	inStream.open(p_file);
-	
-	if (inStream.fail()) {
-		throw (std::runtime_error("file failed to open."));
-	} else if (inStream.is_open()) {
-		
-		while (inStream >> commands) {
-			if (commands == "NAVIGATE") {
+
+	if (inStream.fail())
+	{
+		throw(std::runtime_error("file failed to open."));
+	}
+	else if (inStream.is_open())
+	{
+
+		while (inStream >> commands)
+		{
+			if (commands == "NAVIGATE")
+			{
 				inStream >> commands;
 				history.navigateTo(commands);
-			} else if (commands == "HISTORY") {
+			}
+			else if (commands == "HISTORY")
+			{
 				history.print();
-			} else if (commands == "BACK") {
+			}
+			else if (commands == "BACK")
+			{
 				history.back();
-			} else if (commands == "FORWARD") {
+			}
+			else if (commands == "FORWARD")
+			{
 				history.forward();
-			} else {
-				throw (std::runtime_error("No relevant commands found."));
+			}
+			else
+			{
+				throw(std::runtime_error("No relevant commands found."));
 			}
 		}
 	}
-	
+
 	inStream.close();
-	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
