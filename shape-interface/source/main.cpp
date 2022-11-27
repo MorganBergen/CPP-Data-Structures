@@ -10,6 +10,10 @@
 
 int main(int argc, const char * argv[]) {
     
+	std::cout << "total nuber of characters = " << argc << std::endl;
+
+
+	
     if (argc < 2) {
         std::cerr << "incorrect number of parameters\n";
     } else {
