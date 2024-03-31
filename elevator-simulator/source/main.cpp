@@ -11,7 +11,7 @@
 #include <iostream>
 
 int main(int argc, const char * argv[]) {
-    
+
     if (argc < 2) {
         std::cerr << "Incorrect number of parameters.\n";
     } else {
